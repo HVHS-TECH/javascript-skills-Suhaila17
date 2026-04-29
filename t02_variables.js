@@ -6,7 +6,7 @@ console.log("Running t02_variables.js")
 console.log("Hello world")
 
 // Variables
-let 
+let pocketmoney= 3;
 
 /****************************
 Main code
