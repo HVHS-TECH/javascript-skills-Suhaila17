@@ -8,7 +8,7 @@ console.log("Hello world")
 
 // Variables
 let pocketMoney= 3;
-console.log(poketMoney)
+console.log(poketMoney);
 /****************************
 Main code
 ****************************/
