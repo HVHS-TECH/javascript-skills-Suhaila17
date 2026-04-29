@@ -7,8 +7,9 @@ console.log("Hello world")
 
 
 // Variables
-let pocketMoney= 3;
-console.log(poketMoney);
+var name= Suhaila;
+var age= 15;
+var isStudent= true; 
 /****************************
 Main code
 ****************************/
