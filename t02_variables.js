@@ -13,7 +13,8 @@ var pocketMoney= 150;
 /****************************
 Main code
 ****************************/
-console.log("Name:"+ userName)
+console.log("Name:"+ userName);
+
 
 
 /****************************
