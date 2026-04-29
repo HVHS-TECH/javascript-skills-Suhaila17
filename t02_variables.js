@@ -13,7 +13,7 @@ var pocketMoney= 150;
 /****************************
 Main code
 ****************************/
-console.log("you have" + pocketMoney+ "dollars")
+console.log("Name:"+ userName)
 
 
 /****************************
