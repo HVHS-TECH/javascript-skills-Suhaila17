@@ -11,6 +11,7 @@ var currentYear= 2026;
 var pocketMoney= 150;
 var num1= 10;
 var num2= 5;
+var newMoney;
 
 
 /****************************
@@ -24,7 +25,8 @@ console.log("add", num1 + num2)
 console.log("subtract", num1 - num2)
 console.log("subtract", num1 * num2)
 console.log("divide", num1 / num2)
-
+newMoney= pocketMoney/2
+console.log()
 
 /****************************
 Functions
