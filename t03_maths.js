@@ -16,10 +16,10 @@ var num2= 5;
 /****************************
 Main code
 ****************************/
-console.log("Hi my name is"+ userName);
-console.log("As of 2026 I am"+ userAge + "years old");
-console.log("current Year:"+ currentYear);
-console.log("I have"+ pocketMoney+"dollars");
+console.log("Hi my name is" + userName);
+console.log("As of 2026 I am" + userAge + "years old");
+console.log("current Year:" + currentYear);
+console.log("I have" + pocketMoney+"dollars");
 console.log("add", num1 + num2)
 console.log("subtract", num1 - num2)
 console.log("subtract", num1 * num2)
