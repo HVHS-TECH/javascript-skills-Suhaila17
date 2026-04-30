@@ -20,8 +20,8 @@ console.log("Name:"+ userName);
 console.log("Age:"+ userAge);
 console.log("current Year:"+ currentYear);
 console.log("Poket Money:"+ pocketMoney);
-console.log()
-
+console.log("add", num1 + num2)
+console.log("add", num1 + num2)
 
 
 /****************************
