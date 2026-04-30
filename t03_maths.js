@@ -17,16 +17,15 @@ var newMoney;
 /****************************
 Main code
 ****************************/
-console.log("Hi my name is", + userName);
-console.log("As of 2026 you are", + userAge + "years old");
-console.log("current Year:" + currentYear);
+console.log("Hi my name is " + userName);
+console.log(" As of  " + currentYear+ " you are ", + userAge + " years old");
 console.log("you have ", + pocketMoney +"dollars");
 console.log("add", num1 + num2)
 console.log("subtract", num1 - num2)
 console.log("subtract", num1 * num2)
 console.log("divide", num1 / num2)
 newMoney= pocketMoney/2
-console.log("You spen half of yor money now you have", + newMoney)
+console.log("You spend half of yor money now you have ", + newMoney)
 
 /****************************
 Functions
