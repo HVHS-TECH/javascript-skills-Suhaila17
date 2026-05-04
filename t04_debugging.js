@@ -1,4 +1,4 @@
-console.log("Task 4 - Debugging");
+console.log("to4_debugging.js");
 
 // calculate the area
 var length = 8;
