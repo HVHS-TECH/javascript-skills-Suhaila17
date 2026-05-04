@@ -1,4 +1,4 @@
-console.log("to4_debugging.js");
+console.log("t04_debugging.js");
 
 //variables
 var lenght = 8;
