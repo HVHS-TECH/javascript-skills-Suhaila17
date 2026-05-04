@@ -28,6 +28,9 @@ console.log("You spend half of yor money now you have " + newMoney + " dollars "
 newMoney= pocketMoney/2+3
 console.log("Then you get $3, now you have " + newMoney);
 
+const OUTPUT = document.getElementById("JavaScriptOutput");
+OUTPUT.innerHTML="<h2>Added by javascript</h2>" 
+
 
 /****************************
 Functions
