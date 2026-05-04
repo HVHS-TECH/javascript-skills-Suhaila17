@@ -1,7 +1,7 @@
 console.log("to4_debugging.js");
 
 //variables
-var length = 8;
+var lenght = 8;
 var width = 10;
 var area = 80;
 var perimeter = 8 + length + 10 + width; 
