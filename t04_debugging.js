@@ -1,12 +1,9 @@
 console.log("to4_debugging.js");
 
-// calculate the area
+//variables
 var length = 8;
 var width = 10;
-
-var area = length * width;
-
-// calculate the perimeter
+var area = 80;
 var perimeter = 8 + length + 10 + width; 
 
 
@@ -18,6 +15,8 @@ console.log("The same piece of paper has a perimeter of "+perimeter);
 // Check, does this result look sensible
 if (perimeter > area){
     console.log("Yay, your area is larger, this is right for this example");
-}else{
-    console.log("Hmm, your perimeter is larger. It shouldn't be for this example);
+}
+
+else{
+    console.log("Hmm, your perimeter is larger. It shouldn't be for this example");
 }
