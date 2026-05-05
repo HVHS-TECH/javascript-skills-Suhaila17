@@ -30,8 +30,9 @@ console.log("Then you get $3, now you have " + newMoney);
 
 const OUTPUT = document.getElementById("JavaScriptOutput");
 OUTPUT.innerHTML="<h2>Added by javascript</h2>" 
-OUTPUT.innerHTML="<"
-
+OUTPUT.innerHTML="<p>Hello " + userName + "</p>"
+OUTPUT.innerHTML="<p>Second graph line.</p>"
+OUTPUT.innerHTML="<p>Third graph line</p>"
 
 /****************************
 Functions
