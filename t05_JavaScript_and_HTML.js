@@ -30,6 +30,7 @@ console.log("Then you get $3, now you have " + newMoney);
 
 const OUTPUT = document.getElementById("JavaScriptOutput");
 OUTPUT.innerHTML="<h2>Added by javascript</h2>" 
+OUTPUT.innerHTML="<"
 
 
 /****************************
