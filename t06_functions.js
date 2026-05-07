@@ -38,5 +38,5 @@ OUTPUT.innerHTML +="<p>Third graph line</p>";
 Functions
 ****************************/
 function writeline(){
-    
+    // Add a line to html
 }
