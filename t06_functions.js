@@ -34,9 +34,11 @@ OUTPUT.innerHTML +="<p>Hello " + userName + "</p>";
 OUTPUT.innerHTML +="<p>Second graph line.</p>";
 OUTPUT.innerHTML +="<p>Third graph line</p>";
 
+
 /****************************
 Functions
 ****************************/
 function writeline(){
-    // Add a line to html
+    // Add a line to the html page
+    OUTPUT.innerHTML +="<p>Less code matters<p>"
 }
