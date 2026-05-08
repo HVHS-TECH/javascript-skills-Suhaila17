@@ -34,6 +34,9 @@ OUTPUT.innerHTML +="<p>Hello " + userName + "</p>";
 OUTPUT.innerHTML +="<p>Second graph line.</p>";
 OUTPUT.innerHTML +="<p>Third graph line</p>";
 welcome();
+displayProduct("chocolate", 4);
+displayProduct("Chips", 3);
+displayProduct("Drink", 2.50);
 
 
 /****************************
@@ -46,4 +49,5 @@ function welcome(){
 
 function displayProduct(_name, _price){
     // Add a line to the html page
-    OUTPUT.innerHTML += "<p>" + _name + "costs $" + "<p>";}
+    OUTPUT.innerHTML += "<p> " + _name + " costs $ " + "<p>";
+}
