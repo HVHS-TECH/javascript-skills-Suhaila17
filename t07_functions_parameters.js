@@ -49,5 +49,5 @@ function welcome(){
 
 function displayProduct(_name, _price){
     // Add a line to the html page
-    OUTPUT.innerHTML += "<p> " + _name + " costs $ " + "<p>";
+    OUTPUT.innerHTML += "<p> " + _name + " costs $ " + _price + "<p>";
 }
