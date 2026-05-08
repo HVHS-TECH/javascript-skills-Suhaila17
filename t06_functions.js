@@ -33,7 +33,8 @@ OUTPUT.innerHTML +="<h2>Added by javascript</h2>";
 OUTPUT.innerHTML +="<p>Hello " + userName + "</p>";
 OUTPUT.innerHTML +="<p>Second graph line.</p>";
 OUTPUT.innerHTML +="<p>Third graph line</p>";
-wrelcome();
+welcome();
+
 
 /****************************
 Functions
@@ -43,7 +44,4 @@ function welcome(){
     OUTPUT.innerHTML += "<p>Welcome to the shop<p>";
 }
 
-function welcome(_name){
-    // Add a line to the html page
-    OUTPUT.innerHTML += "<p>Welcome to the page" + _name  "<p>";
-}
+
