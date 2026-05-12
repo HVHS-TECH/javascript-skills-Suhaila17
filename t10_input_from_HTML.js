@@ -37,8 +37,7 @@ displayProduct("Chips", 3);
 displayProduct("Drink", 2.50);
 }
 
-const NAME_FIELD = document.getElementById("nameField");
-let userName = NAME_FIELD.value;
+
 
 /****************************
 Functions
@@ -51,4 +50,10 @@ function welcome(){
 function displayProduct(_name, _price){
     // Add a line to the html page
     OUTPUT.innerHTML += "<p> " + _name + " costs:  $ " + _price + "<p>";
+}
+
+function getFromInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    let userName = NAME_FIELD.value; 
+    OUTPUT.innerHtml="<p>Your name is " +userName +"</p>";
 }
