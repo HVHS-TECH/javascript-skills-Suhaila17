@@ -29,9 +29,8 @@ Functions
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const OUTPUT = document.getElementById("nameField");
-getFromInput();
 
 function getFromInput(){
     let userName = NAME_FIELD.value; 
-    OUTPUT.innerHtml="<p>Your name is " + userName + "</p>";
+    OUTPUT.innerHTML +="<p>Your name is " + userName + "</p>";
 }
