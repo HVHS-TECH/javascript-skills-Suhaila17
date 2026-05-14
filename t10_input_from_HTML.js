@@ -27,8 +27,9 @@ console.log("Then you get $3, now you have " + newMoney);
 /****************************
 Functions
 ****************************/
-const NAME_FIELD = document.getElementById("nameField");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const NAME_FIELD = document.getElementById("nameField");
+getFromInput();
 
 function getFromInput(){
     let userName = NAME_FIELD.value; 
