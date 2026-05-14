@@ -27,7 +27,7 @@ console.log("Then you get $3, now you have " + newMoney);
 /****************************
 Functions
 ****************************/
-
+const NAME_FIELD = document.getElementById("nameField");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 function start() {
 OUTPUT.innerHTML = "";
@@ -41,9 +41,6 @@ displayProduct("Chips", 3);
 displayProduct("Drink", 2.50);
 }
 
-/****************************
-Functions
-****************************/
 function welcome(){
     // Add a line to the html page
     OUTPUT.innerHTML += "<p>Welcome to the shop<p>";
@@ -55,7 +52,6 @@ function displayProduct(_name, _price){
 }
 
 function getFromInput(){
-    const NAME_FIELD = document.getElementById("nameField");
     let userName = NAME_FIELD.value; 
     OUTPUT.innerHtml="<p>Your name is " +userName +"</p>";
 }

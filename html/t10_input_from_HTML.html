@@ -17,16 +17,18 @@
 
 <body>
   <h1>T10-input from HTML</h1>
-  
+  <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  <button onclick="start()">Start</button>
 
   <form onsubmit="return false;">
     <label for="formName">Name:</label>
-    <input type="text" id="nameField" name="formName"  placeHolder="Name">
+    <input type="text" id="nameField" name="formName" value="Suhaila" placeHolder="Name">
     <input type="submit" onClick=getFromInput()>
 
   </form>
 
   <div id="spaceForJavaScriptOutput">
+    The output of your script will go here.
   </div>
 
 
