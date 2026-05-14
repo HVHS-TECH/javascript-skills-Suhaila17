@@ -30,7 +30,7 @@ Functions
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const OUTPUT = document.getElementById("nameField");
 
-function getFromInput(){
+function getFormInput(){
     let userName = NAME_FIELD.value; 
     OUTPUT.innerHTML +="<p>Your name is " + userName + "</p>";
 }
