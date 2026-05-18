@@ -31,16 +31,15 @@ console.log("Then you get $3, now you have " + newMoney);
 Functions
 ****************************/
 
+
 function getFormInput(){
-    let userName = NAME_FIELD.value; 
-    OUTPUT.innerHTML = "<p>Your name is " + userName + "</p>";
-
-    let userAge = AGE_FIELD.value;
-    OUTPUT.innerHTML += "<p> Your age is" + userAge + "</p>";
-    
+    let userName = NAME_FIELD.value;
+    OUTPUT.innerHTML += "<p> Your name is " + userName + "</p>";
     let userMoney = MONEY_FIELD.value;
-    OUTPUT.innerHTML += "<p> you have $" + userMoney + "</p>";
-
+    OUTPUT.innerHTML += "<p> Your product is " + userProduct + "</p>";
+    let userAge = AGE_FIELD.value;
+    OUTPUT.innerHTML += "<p> Your age is " + userAge + "</p>";
 }
+
 
 
