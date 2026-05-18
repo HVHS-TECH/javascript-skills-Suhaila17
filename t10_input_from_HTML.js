@@ -29,8 +29,8 @@ Functions
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const NAME_FIELD = document.getElementById("nameField");
-const NAME_FIELD = document.getElementById("ageField");
-const NAME_FIELD = document.getElementById("moneyField");
+const AGE_FEILD= document.getElementById("ageField");
+const MONEY_FEILD= document.getElementById("moneyField");
 
 function getFormInput(){
     let userName = NAME_FIELD.value; 
