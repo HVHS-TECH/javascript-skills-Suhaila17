@@ -17,6 +17,7 @@ Main
 const NAME_FIELD = document.getElementById("nameField");
 const AGE_FIELD = document.getElementById("ageField");
 const MONEY_FIELD = document.getElementById("moneyField");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 
   console.log("Hi my name is " + userName);
