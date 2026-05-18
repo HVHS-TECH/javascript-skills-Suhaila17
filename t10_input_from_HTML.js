@@ -14,9 +14,9 @@ var birthYear= 2010;
 /****************************
 Main
 ****************************/
-const NAME_FIELD = document.getElementById("NameField");
-const AGE_FIELD = document.getElementById("AgeField");
-const MONEY_FIELD = document.getElementById("MoneyField");
+const NAME_FIELD = document.getElementById("nameField");
+const AGE_FIELD = document.getElementById("ageField");
+const MONEY_FIELD = document.getElementById("moneyField");
 
 
   console.log("Hi my name is " + userName);
