@@ -29,8 +29,17 @@ Functions
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const NAME_FIELD = document.getElementById("nameField");
+const NAME_FIELD = document.getElementById("ageField");
+const NAME_FIELD = document.getElementById("moneyField");
 
 function getFormInput(){
     let userName = NAME_FIELD.value; 
     OUTPUT.innerHTML = "<p>Your name is " + userName + "</p>";
+
+    let userAge = AGE_FEILD.value;
+    OUTPUT.innerHTML = "<p> Your age is" + userAge + "</p>";
+    
+    let userMoney = MONEY_FEILD.value;
+    OUTPUT.innerHTML = "<p> you have $" + userMoney + "</p>";
+
 }
