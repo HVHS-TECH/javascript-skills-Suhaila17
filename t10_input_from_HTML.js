@@ -14,8 +14,6 @@ var birthYear= 2010;
 /****************************
 Main
 ****************************/
-
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const NAME_FIELD = document.getElementById("NameField");
 const AGE_FIELD = document.getElementById("AgeField");
 const MONEY_FIELD = document.getElementById("MoneyField");
@@ -37,7 +35,7 @@ Functions
 
 function getFormInput(){
     let userName = NAME_FIELD.value;
-    OUTPUT.innerHTML += "<p> Your name is " + userName + "</p>";
+    OUTPUT.innerHTML = "<p> Your name is " + userName + "</p>";
     let userAge = AGE_FIELD.value;
     OUTPUT.innerHTML += "<p> Your age is " + userAge + "</p>";
     let userMoney = MONEY_FIELD.value;
