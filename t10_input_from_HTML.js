@@ -9,7 +9,7 @@ var newMoney;
 var birthYear= 2010;
 
 
-
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 /****************************
 Main code
 ****************************/
