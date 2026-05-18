@@ -18,8 +18,9 @@ Main
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const NAME_FIELD = document.getElementById("NameField");
 const AGE_FIELD = document.getElementById("AgeField");
-const PRODUCT_PRICE_FIELD = document.getElementById("MoneyField");
-function start(){
+const MONEY_FIELD = document.getElementById("MoneyField");
+
+
   console.log("Hi my name is " + userName);
   console.log("As of  " + currentYear + " you are ", + userAge + " years old");
  console.log("you were born in " + birthYear);
@@ -30,28 +31,9 @@ function start(){
  console.log("You spend half of yor money now you have " + newMoney + " dollars ");
  newMoney= pocketMoney/2+3
  console.log("Then you get $3, now you have " + newMoney);
-
-    
-    OUTPUT.innerHTML= "<h2>Added by JavaScript</h2>";
-    OUTPUT.innerHTML += "<h2>Hello " + myName + "!</h2>";
-    OUTPUT.innerHTML += "<h2>Second Paragraph line</h2>";
-    OUTPUT.innerHTML += "<h2>Third Paragraph Line</h2>";
-    welcome();
-    displayProduct("Chocolate", 4);
-    displayProduct("Chips", 3);
-    displayProduct("Drink", 2.50);
-    getFormInput();
-}
 /****************************
 Functions
 ****************************/
-function welcome(){
-    OUTPUT.innerHTML += "<p>Welcome to My shop</p>";  
-}
-
-function displayProduct(_name, _price){
-    OUTPUT.innerHTML += "<p>" + _name + " costs $" + _price + "</p>";
-}
 
 function getFormInput(){
     let userName = NAME_FIELD.value;
