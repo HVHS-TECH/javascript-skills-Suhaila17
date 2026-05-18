@@ -28,17 +28,18 @@ console.log("Then you get $3, now you have " + newMoney);
 Functions
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-const NAME_FIELD = document.getElementById("NameField");
-const AGE_FEILD = document.getElementById("AgeField");
-const MONEY_FEILD = document.getElementById("MoneyField");
+
 
 function getFormInput(){
+    const NAME_FIELD = document.getElementById("NameField");
     let userName = NAME_FIELD.value; 
     OUTPUT.innerHTML = "<p>Your name is " + userName + "</p>";
 
+    const AGE_FEILD = document.getElementById("AgeField");
     let userAge = AGE_FEILD.value;
     OUTPUT.innerHTML = "<p> Your age is" + userAge + "</p>";
-    
+
+    const MONEY_FEILD = document.getElementById("MoneyField");
     let userMoney = MONEY_FEILD.value;
     OUTPUT.innerHTML = "<p> you have $" + userMoney + "</p>";
 
