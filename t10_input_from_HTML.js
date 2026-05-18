@@ -30,19 +30,19 @@ Functions
 
 
 function getFormInput(){
-    const NAME_FIELD = document.getElementById("NameField");
+    const NAME_FIELD = document.getElementById("nameField");
     let userName = NAME_FIELD.value; 
     OUTPUT.innerHTML = "<p>Your name is " + userName + "</p>";
 }
 
 function getFormInput(){
-    const AGE_FEILD = document.getElementById("AgeField");
+    const AGE_FEILD = document.getElementById("ageField");
     let userAge = AGE_FEILD.value;
     OUTPUT.innerHTML = "<p> Your age is" + userAge + "</p>";
 }
 
 function getFormInput(){
-    const MONEY_FEILD = document.getElementById("MoneyField");
+    const MONEY_FEILD = document.getElementById("moneyField");
     let userMoney = MONEY_FEILD.value;
     OUTPUT.innerHTML = "<p> you have $" + userMoney + "</p>";
 }
