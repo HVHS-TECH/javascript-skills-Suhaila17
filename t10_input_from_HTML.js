@@ -43,3 +43,4 @@ function getFormInput(){
     OUTPUT.innerHTML = "<p> you have $" + userMoney + "</p>";
 
 }
+
