@@ -20,7 +20,7 @@ const MONEY_FIELD = document.getElementById("moneyField");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 
-  console.log("Hi my name is " + userName);
+  console.log("Your name is " + userName);
   console.log("As of  " + currentYear + " you are ", + userAge + " years old");
  console.log("you were born in " + birthYear);
  newAge= userAge+10
