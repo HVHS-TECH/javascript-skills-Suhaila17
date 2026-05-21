@@ -41,10 +41,9 @@ function getFormInput(){
     OUTPUT.innerHTML = "<p> Your name is " + userName + "</p>";
     let userAge = Number(AGE_FIELD.value);
     OUTPUT.innerHTML += "<p> Your age is " + userAge + "</p>";
-    let userProduct = Number(PRODUCT_FIELD.value);
+    let userProduct = PRODUCT_FIELD.value;
     OUTPUT.innerHTML += "<p> Your product is " + userProduct + "</p>" ;
-    let userProduct = Number(PRODUCT_PRICE.value);
-    let userProductPrice = Number(PRODUCT_PRICE);
+    let userProductPrice = Number(PRODUCT_PRICE.value);
     OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
