@@ -16,7 +16,7 @@ Main
 ****************************/
 const NAME_FIELD = document.getElementById("nameField");
 const AGE_FIELD = document.getElementById("ageField");
-const PRODUCT_FIELD_FIELD = document.getElementById("productField");
+const PRODUCT_FIELD= document.getElementById("productField");
 const PRODUCT_PRICE = document.getElementById("productPrice");
 const MONEY_FIELD = document.getElementById("moneyField");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
