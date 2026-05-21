@@ -54,6 +54,6 @@ else{
 
 }
 
-function calculateChange(_moneyField){
+function getFormInput(_moneyField){
     let
 }
