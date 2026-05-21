@@ -37,9 +37,9 @@ Functions
 function getFormInput(){
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML = "<p> Your name is " + userName + "</p>";
-    let userAge = AGE_FIELD.value;
+    let userAge = Number(AGE_FIELD.value);
     OUTPUT.innerHTML += "<p> Your age is " + userAge + "</p>";
-    let userMoney = MONEY_FIELD.value;
+    let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
 }
 
