@@ -16,6 +16,8 @@ Main
 ****************************/
 const NAME_FIELD = document.getElementById("nameField");
 const AGE_FIELD = document.getElementById("ageField");
+const PRODUCT_FIELD_FIELD = document.getElementById("productField");
+const PRODUCT_PRICE = document.getElementById("productPrice");
 const MONEY_FIELD = document.getElementById("moneyField");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
@@ -39,6 +41,11 @@ function getFormInput(){
     OUTPUT.innerHTML = "<p> Your name is " + userName + "</p>";
     let userAge = Number(AGE_FIELD.value);
     OUTPUT.innerHTML += "<p> Your age is " + userAge + "</p>";
+    let userProduct = Number(PRODUCT_FIELD.value);
+    OUTPUT.innerHTML += "<p> Your product is " + userProduct + "</p>" ;
+    let userProduct = Number(PRODUCT_PRICE.value);
+    let userProductPrice = Number(PRODUCT_PRICE);
+    OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
 
@@ -55,5 +62,5 @@ else{
 }
 
 function calculateChange(_moneyField){
-    let 
+    let user
 }
