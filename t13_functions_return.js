@@ -62,7 +62,7 @@ else{
 
 function calculateChange(_userProductPrice, _userMoney){
     let userProductPrice = Number(PRODUCT_PRICE.value);
-    OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
+    OUTPUT.innerHTML += "<p> Your product price is $" + userProductPrice + "</p>" ;
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
     let change= Number(userMoney-userProductPrice);
