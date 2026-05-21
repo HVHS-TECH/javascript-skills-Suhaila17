@@ -43,6 +43,6 @@ function getFormInput(){
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
 }
 
-if (moneyField < 4){
+if (moneyField < userMoney){
     console.log("Definitely too young")
 }
