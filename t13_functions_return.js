@@ -43,7 +43,7 @@ function getFormInput(){
     OUTPUT.innerHTML += "<p> Your age is " + userAge + "</p>";
     let userProduct = PRODUCT_FIELD.value;
     OUTPUT.innerHTML += "<p> Your product is " + userProduct + "</p>" ;
-    let userProductPrice = Number(PRODUCT_PRICE.value);
+    let userProductPrice += Number(PRODUCT_PRICE.value);
     OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
@@ -60,6 +60,20 @@ else{
 
 }
 
-function calculateChange(_moneyField){
-    let user
+function calculateChange(_userProductPrice, _userMoney){
+    let userProductPrice = Number(PRODUCT_PRICE.value);
+    OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
+    let userMoney = Number(MONEY_FIELD.value);
+    OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
+    let change= Number(userMoney-userProductPrice);
+    OUTPUT.innerHTML += "<p> Your change is $" + change + "</p>";
+if (change < 0){
+    OUTPUT.innerHTML += "<p> You have a loss of $" + change + "</p>";
+}
+else if (change == 0){
+    OUTPUT.innerHTML += "<p> You don't have a change </p>";
+}
+else {
+     OUTPUT.innerHTML += "<p> You have a of $" + change + "</p>";
+}
 }
