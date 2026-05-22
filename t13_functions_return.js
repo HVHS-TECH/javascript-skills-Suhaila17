@@ -68,8 +68,7 @@ function calculateChange(_userProductPrice, _userMoney){
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
     let productCost = Number(PRODUCT_PRICE.value);
-    let price= Number(MONEY_FIELD);
-    OUTPUT.innerHTML += "<p> your product costs $" + productCost + " and you have $" + price + "</p>";
+    OUTPUT.innerHTML += "<p> your product costs $" + productCost + " and you have $" + userMoney + "</p>";
     let change= Number(userMoney - userProductPrice);
     OUTPUT.innerHTML += "<p> Your change is $" + change + "</p>";
 if (change < 0){
@@ -79,6 +78,6 @@ else if (change == 0){
     OUTPUT.innerHTML += "<p> You don't have a change </p>";
 }
 else if (change > 0){
-     OUTPUT.innerHTML += "<p> You Have lots of change</p>";
+     OUTPUT.innerHTML += "<p> You have lots of change</p>";
 }
 }
