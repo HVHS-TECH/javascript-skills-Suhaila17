@@ -22,16 +22,16 @@ const MONEY_FIELD = document.getElementById("moneyField");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 
-  console.log("Your name is " + userName);
-  console.log("As of  " + currentYear + " you are ", + userAge + " years old");
- console.log("you were born in " + birthYear);
- newAge= userAge+10
- console.log("In 10 years you will be " + newAge + " years old ");
- console.log("you have " + pocketMoney +" dollars");
- newMoney= pocketMoney/2
- console.log("You spend half of yor money now you have " + newMoney + " dollars ");
- newMoney= pocketMoney/2+3
- console.log("Then you get $3, now you have " + newMoney);
+console.log("Your name is " + userName);
+console.log("As of  " + currentYear + " you are ", + userAge + " years old");
+console.log("you were born in " + birthYear);
+newAge= userAge+10
+console.log("In 10 years you will be " + newAge + " years old ");
+console.log("you have " + pocketMoney +" dollars");
+newMoney= pocketMoney/2
+console.log("You spend half of yor money now you have " + newMoney + " dollars ");
+newMoney= pocketMoney/2+3
+console.log("Then you get $3, now you have " + newMoney);
 /****************************
 Functions
 ****************************/
