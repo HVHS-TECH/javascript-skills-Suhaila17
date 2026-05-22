@@ -73,12 +73,12 @@ function calculateChange(_userProductPrice, _userMoney){
     let change= Number(userMoney - userProductPrice);
     OUTPUT.innerHTML += "<p> Your change is $" + change + "</p>";
 if (change < 0){
-    OUTPUT.innerHTML += "<p> You have a loss of $" + change + "</p>";
+    OUTPUT.innerHTML += "<p> You don't have enough money </p>";
 }
 else if (change == 0){
     OUTPUT.innerHTML += "<p> You don't have a change </p>";
 }
 else if (change > 0){
-     OUTPUT.innerHTML += "<p> You don't have enough money </p>";
+     OUTPUT.innerHTML += "<p> You Have lots of change</p>";
 }
 }
