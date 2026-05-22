@@ -78,7 +78,7 @@ if (change < 0){
 else if (change == 0){
     OUTPUT.innerHTML += "<p> You don't have a change </p>";
 }
-else {
-     OUTPUT.innerHTML += "<p> You have a of $" + change + "</p>";
+else if (change > 0){
+     OUTPUT.innerHTML += "<p> You don't have enough money </p>";
 }
 }
