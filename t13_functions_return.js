@@ -14,12 +14,13 @@ var birthYear= 2010;
 /****************************
 Main
 ****************************/
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 const NAME_FIELD = document.getElementById("nameField");
 const AGE_FIELD = document.getElementById("ageField");
 const PRODUCT_FIELD= document.getElementById("productField");
 const PRODUCT_PRICE = document.getElementById("productPrice");
 const MONEY_FIELD = document.getElementById("moneyField");
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+
 
 
 console.log("Your name is " + userName);
@@ -37,11 +38,11 @@ Functions
 ****************************/
 
 function getFormInput(){
-    let userName = NAME_FIELD.value;
+    let userName = (NAME_FIELD.value);
     OUTPUT.innerHTML = "<p> Your name is " + userName + "</p>";
     let userAge = Number(AGE_FIELD.value);
     OUTPUT.innerHTML += "<p> Your age is " + userAge + "</p>";
-    let userProduct = PRODUCT_FIELD.value;
+    let userProduct = (PRODUCT_FIELD.value);
     OUTPUT.innerHTML += "<p> Your product is " + userProduct + "</p>" ;
     let userProductPrice = Number(PRODUCT_PRICE.value);
     OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
