@@ -11,6 +11,7 @@ var pocketMoney= 150;
 var newMoney;
 var birthYear= 2010;
 
+
 /****************************
 Main
 ****************************/
