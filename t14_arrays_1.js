@@ -21,7 +21,7 @@ const AGE_FIELD = document.getElementById("ageField");
 const PRODUCT_FIELD= document.getElementById("productField");
 const PRODUCT_PRICE = document.getElementById("productPrice");
 const MONEY_FIELD = document.getElementById("moneyField");
-
+const CHOOSE_FIELD = document.getElementById("chooseField");
 
 
 console.log("Your name is " + userName);
@@ -49,6 +49,10 @@ function getFormInput(){
     OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
+
+    let chocolateArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!"]
+    let choice = CHOOSE_FIELD.value
+    OUTPUT.innerHTML = "You chose: " + chocolateArray[choice] + "<br>";
 
 if (18 > userAge){
     console.log("Definitely too young");
@@ -82,5 +86,5 @@ else if (change > 0){
 }
 }
 
-let classArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!"]
+
 
