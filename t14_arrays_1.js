@@ -88,7 +88,7 @@ else if (change > 0){
     OUTPUT.innerHTML += "You chose: " + chocolateArray[choice] + "<br>";
 
     let choices = RATE_FIELD.value;
-    OUTPUT.innerHTML += "You rated chocolate: " + chocolateArray[choices] +"/3" +"<br>";
+    OUTPUT.innerHTML += "You rated chocolate: " + chocolateArray[choices] + "/3 <br>";
 
 }
 
