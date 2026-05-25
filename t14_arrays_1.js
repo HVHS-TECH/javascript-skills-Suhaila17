@@ -48,7 +48,7 @@ function getFormInput(){
     let userProduct = (PRODUCT_FIELD.value);
     OUTPUT.innerHTML += "<p> Your product is " + userProduct + "</p>" ;
     let userProductPrice = Number(PRODUCT_PRICE.value);
-    OUTPUT.innerHTML += "<p> Your product price is " + userProductPrice + "</p>" ;
+    OUTPUT.innerHTML += "<p> Your product price is $" + userProductPrice + "</p>" ;
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
 
@@ -69,9 +69,7 @@ else{
 
 function calculateChange(_userProductPrice, _userMoney){
     let userProductPrice = Number(PRODUCT_PRICE.value);
-    OUTPUT.innerHTML += "<p> Your product price is $" + userProductPrice + "</p>" ;
     let userMoney = Number(MONEY_FIELD.value);
-    OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
     let productCost = Number(PRODUCT_PRICE.value);
     OUTPUT.innerHTML += "<p> your product costs $" + productCost + " and you have $" + userMoney + "</p>";
     let change= Number(userMoney - userProductPrice);
