@@ -87,14 +87,14 @@ else if (change > 0){
 
  let chocolateArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!"]
     OUTPUT.innerHTML = chocolateArray;
-    let choice = CHOOSE_FIELD.value
+    let choice = CHOOSE_FIELD.value;
     OUTPUT.innerHTML = "You chose: " + chocolateArray[choice] + "<br>";
 
     let rateChocolateArray = ["0", "1", "2", "3"]
     OUTPUT.innerHTML = rateChocolateArray;
-    let choice = RATE_FIELD.value
+    let choice = RATE_FIELD.value;
     OUTPUT.innerHTML = "You rated chocolate: " + chocolateArray[choice] +"/3" +"<br>";
-    
+
 }
 
 
