@@ -84,6 +84,7 @@ else if (change > 0){
      OUTPUT.innerHTML += "<p> You have lots of change</p>";
     
 }
+    let chocolateArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!"]
     let choice = CHOOSE_FIELD.value;
     OUTPUT.innerHTML += "You chose: " + chocolateArray[choice] + "<br>";
 
