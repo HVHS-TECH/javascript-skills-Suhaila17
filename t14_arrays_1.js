@@ -22,6 +22,8 @@ const PRODUCT_FIELD= document.getElementById("productField");
 const PRODUCT_PRICE = document.getElementById("productPrice");
 const MONEY_FIELD = document.getElementById("moneyField");
 const CHOOSE_FIELD = document.getElementById("chooseField");
+const RATE_FIELD = document.getElementById("rateField");
+
 
 
 console.log("Your name is " + userName);
@@ -84,16 +86,11 @@ else if (change > 0){
      OUTPUT.innerHTML += "<p> You have lots of change</p>";
     
 }
-
- let chocolateArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!"]
-    OUTPUT.innerHTML = chocolateArray;
     let choice = CHOOSE_FIELD.value;
     OUTPUT.innerHTML = "You chose: " + chocolateArray[choice] + "<br>";
 
-    let rateChocolateArray = ["0", "1", "2", "3"]
-    OUTPUT.innerHTML = rateChocolateArray;
-    let choice = RATE_FIELD.value;
-    OUTPUT.innerHTML = "You rated chocolate: " + chocolateArray[choice] +"/3" +"<br>";
+    let choices = RATE_FIELD.value;
+    OUTPUT.innerHTML = "You rated chocolate: " + chocolateArray[choices] +"/3" +"<br>";
 
 }
 
