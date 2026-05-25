@@ -50,16 +50,6 @@ function getFormInput(){
     let userMoney = Number(MONEY_FIELD.value);
     OUTPUT.innerHTML += "<p> You have $" + userMoney + "</p>";
 
-    let chocolateArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!"]
-    OUTPUT.innerHTML = chocolateArray;
-    let choice = CHOOSE_FIELD.value
-    OUTPUT.innerHTML = "You chose: " + chocolateArray[choice] + "<br>";
-
-    let rateChocolateArray = ["0", "1", "2", "3"]
-    OUTPUT.innerHTML = rateChocolateArray;
-    let choice = RATE_FIELD.value
-    OUTPUT.innerHTML = "You rated chocolate: " + chocolateArray[choice] +"/3" +"<br>";
-
 
 
 
@@ -92,7 +82,19 @@ else if (change == 0){
 }
 else if (change > 0){
      OUTPUT.innerHTML += "<p> You have lots of change</p>";
+    
 }
+
+ let chocolateArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!"]
+    OUTPUT.innerHTML = chocolateArray;
+    let choice = CHOOSE_FIELD.value
+    OUTPUT.innerHTML = "You chose: " + chocolateArray[choice] + "<br>";
+
+    let rateChocolateArray = ["0", "1", "2", "3"]
+    OUTPUT.innerHTML = rateChocolateArray;
+    let choice = RATE_FIELD.value
+    OUTPUT.innerHTML = "You rated chocolate: " + chocolateArray[choice] +"/3" +"<br>";
+    
 }
 
 
