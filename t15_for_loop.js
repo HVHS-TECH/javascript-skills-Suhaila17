@@ -36,6 +36,14 @@ newMoney= pocketMoney/2
 console.log("You spend half of yor money now you have " + newMoney + " dollars ");
 newMoney= pocketMoney/2+3
 console.log("Then you get $3, now you have " + newMoney);
+
+console.log("Starting loop");
+for (let count = 0; count < 10 ; count++ ){
+    console.log("current count" + count)
+}
+
+console.log("loop stopped!");
+
 /****************************
 Functions
 ****************************/
