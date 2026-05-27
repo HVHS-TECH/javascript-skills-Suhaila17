@@ -51,7 +51,7 @@ console.log("100 bottles of milk:")
     console.log("if one of those bottles should happen to fall..")
     
  }
- console.log
+ console.log("and so forth...")
 
 /****************************
 Functions
