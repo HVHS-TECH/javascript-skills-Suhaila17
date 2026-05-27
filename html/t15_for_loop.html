@@ -19,13 +19,46 @@
   <h1>T15-for loop</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
-
   <div id="spaceForJavaScriptOutput">
 
-    The output of your script will go here.
 
   </div>
+
+     <label for="nameField">Name:</label><br>
+    <input type="text" id="nameField" name="formName" placeHolder="Name"><br>
+
+     <label for="ageField">Age:</label><br>
+     <input type="text" id="ageField" name="formAge" placeHolder="Age"><br>
+     
+     <label for="productField">Product:</label><br>
+     <input type="text" id="productField" name="formProduct" placeHolder="Product"><br>
+
+     <label for="productPrice">Price:</label><br>
+     <input type="text" id="productPrice" name="formProductPrice" placeHolder="Product Price"><br>
+
+     <label for="moneyField">Money:</label><br>
+     <input type="text" id="moneyField" name="formMoney" placeHolder="Pocket Money"><br>
+
+     <label for="chooseField">Do you like chocolate?</label><br>
+     <select id="chocolaateField" name="formChocolate">
+      <option value="">choose</option>
+      <option value="0">You loath chocolate</option>
+      <option value="1">Chocolate is meh</option>
+      <option value="2">Chocolate is pretty good</option>
+      <option value="3">Chocolate is the best thing EVER!!!</option>
+     </select><br>
+
+     <label for="rateField">On a scale of 0-3 how much do you like chocolate?</label><br>
+     <select id="rateField" name="formRate">
+      <option value="">choose</option>
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+     </select><br>
+
+     <input type="submit" onClick="getFormInput(), calculateChange()" value="Submit">
+
 
 
   <script src="../t15_for_loop.js"></script>
