@@ -39,10 +39,17 @@ console.log("Then you get $3, now you have " + newMoney);
 
 console.log("Starting loop");
 for (let count = 0; count < 10 ; count++ ){
-    console.log("current count" + count)
+    console.log("current count: " + count)
 }
 
 console.log("loop stopped!");
+
+console.log("100 bottles of milk on the wall,")
+ for (let bottle = 100; bottle > 0 ; bottle--){
+    console.log(bootle + " of milk on the wall")
+    console.log("if one of those bottles should happen to fall..")
+    console.log()
+ }
 
 /****************************
 Functions
