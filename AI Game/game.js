@@ -7,12 +7,12 @@ const bestScoreText = document.getElementById('bestScoreText');
 
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
-const GRAVITY = 0.45;
-const FLAP_STRENGTH = -9;
-const PIPE_SPEED = 2.6;
-const PIPE_GAP = 150;
+const GRAVITY = 0.38;
+const FLAP_STRENGTH = -8;
+const PIPE_SPEED = 2.0;
+const PIPE_GAP = 200;
 const PIPE_WIDTH = 80;
-const PIPE_DISTANCE = 200;
+const PIPE_DISTANCE = 220;
 
 let bird;
 let pipes;
@@ -135,7 +135,7 @@ function update() {
   bird.y += bird.velocity;
   bird.rotation = clamp((bird.velocity / 20) * 0.75, -0.5, 0.8);
 
-  if (frameCount % 100 === 0) {
+  if (frameCount % 120 === 0) {
     spawnPipe();
   }
 
