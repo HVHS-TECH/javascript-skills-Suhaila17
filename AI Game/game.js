@@ -7,10 +7,10 @@ const bestScoreText = document.getElementById('bestScoreText');
 
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
-const GRAVITY = 0.32;
-const FLAP_STRENGTH = -7;
-const PIPE_SPEED = 1.8;
-const PIPE_GAP = 260;
+const GRAVITY = 0.28;
+const FLAP_STRENGTH = -6;
+const PIPE_SPEED = 1.4;
+const PIPE_GAP = 320;
 const PIPE_WIDTH = 80;
 const PIPE_DISTANCE = 220;
 
@@ -25,7 +25,7 @@ function resetGame() {
   bird = {
     x: WIDTH * 0.25,
     y: HEIGHT / 2,
-    radius: 13,
+    radius: 11,
     velocity: 0,
     rotation: 0,
   };
@@ -41,7 +41,7 @@ function resetGame() {
 }
 
 function spawnPipe() {
-  const minPipeHeight = 60;
+  const minPipeHeight = 80;
   const maxPipeHeight = HEIGHT - PIPE_GAP - minPipeHeight;
   const topHeight = Math.floor(Math.random() * (maxPipeHeight - minPipeHeight + 1)) + minPipeHeight;
   pipes.push({
