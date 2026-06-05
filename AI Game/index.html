@@ -12,6 +12,13 @@
     <p>Press Space, Click, or Tap to flap.</p>
     <div class="canvas-wrap">
       <canvas id="gameCanvas" width="400" height="600"></canvas>
+      <div class="game-hud" id="gameHud">
+        <div class="hud-row">
+          <span id="hudScore">Score: 0</span>
+          <button id="hudResetButton" class="small-button">Reset</button>
+        </div>
+        <p id="hudMessage">Focus on the gap and keep flapping!</p>
+      </div>
       <div class="overlay" id="overlay">
         <div class="overlay-card">
           <h2 id="overlayTitle">Flappy Bird</h2>

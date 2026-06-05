@@ -67,6 +67,38 @@ canvas {
 .small-button:hover {
   transform: translateY(-1px);
 }
+.game-hud {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  background: rgba(8, 15, 38, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  color: #ffffff;
+  pointer-events: auto;
+}
+.game-hud .hud-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.game-hud span,
+.game-hud p {
+  margin: 0;
+}
+.game-hud p {
+  font-size: 0.96rem;
+  opacity: 0.95;
+}
+#hudResetButton {
+  pointer-events: auto;
+}
 .scoreboard {
   margin-top: 16px;
   display: grid;

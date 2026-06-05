@@ -1,13 +1,16 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 const scoreLabel = document.getElementById('scoreLabel');
+const hudScore = document.getElementById('hudScore');
 const bestLabel = document.getElementById('bestLabel');
 const messages = document.getElementById('messages');
+const hudMessage = document.getElementById('hudMessage');
 const overlay = document.getElementById('overlay');
 const overlayTitle = document.getElementById('overlayTitle');
 const overlayText = document.getElementById('overlayText');
 const overlayButton = document.getElementById('overlayButton');
 const resetButton = document.getElementById('resetButton');
+const hudResetButton = document.getElementById('hudResetButton');
 const bestScoreText = document.getElementById('bestScoreText');
 
 const WIDTH = canvas.width;
@@ -57,6 +60,7 @@ function spawnPipe() {
 
 function updateScore() {
   scoreLabel.textContent = `Score: ${score}`;
+  hudScore.textContent = `Score: ${score}`;
   bestLabel.textContent = `High Score: ${bestScore}`;
   updateMessages();
 }
@@ -77,17 +81,23 @@ function updateMessages() {
   if (gameState === 'playing') {
     if (score >= 20) {
       messages.textContent = 'Unstoppable! Keep flying!';
+      hudMessage.textContent = 'You are on fire — fly through with confidence!';
     } else if (score >= 10) {
       messages.textContent = 'Great job — you’re doing awesome!';
+      hudMessage.textContent = 'Keep the rhythm and keep going!';
     } else if (score >= 5) {
       messages.textContent = 'Nice work, keep the rhythm!';
+      hudMessage.textContent = 'Stay calm and keep your pace!';
     } else {
       messages.textContent = 'Focus on the gap and keep flapping!';
+      hudMessage.textContent = 'Watch the gap and float steady!';
     }
   } else if (gameState === 'ready') {
     messages.textContent = 'Ready? Press Space, Click, or Tap to start.';
+    hudMessage.textContent = 'Press Start to begin — you’ve got this!';
   } else if (gameState === 'gameOver') {
     messages.textContent = 'Game Over — press Start to try again.';
+    hudMessage.textContent = 'Game over. Breathe and try again!';
   }
 }
 
@@ -267,6 +277,11 @@ overlayButton.addEventListener('click', () => {
 });
 
 resetButton.addEventListener('click', event => {
+  event.stopPropagation();
+  resetGame();
+});
+
+hudResetButton.addEventListener('click', event => {
   event.stopPropagation();
   resetGame();
 });
