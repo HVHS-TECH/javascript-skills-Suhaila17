@@ -7,10 +7,10 @@ const bestScoreText = document.getElementById('bestScoreText');
 
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
-const GRAVITY = 0.38;
-const FLAP_STRENGTH = -8;
-const PIPE_SPEED = 2.0;
-const PIPE_GAP = 200;
+const GRAVITY = 0.32;
+const FLAP_STRENGTH = -7;
+const PIPE_SPEED = 1.8;
+const PIPE_GAP = 260;
 const PIPE_WIDTH = 80;
 const PIPE_DISTANCE = 220;
 
@@ -25,7 +25,7 @@ function resetGame() {
   bird = {
     x: WIDTH * 0.25,
     y: HEIGHT / 2,
-    radius: 16,
+    radius: 13,
     velocity: 0,
     rotation: 0,
   };
