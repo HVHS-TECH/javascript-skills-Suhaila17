@@ -17,10 +17,10 @@ const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
 const GRAVITY = 0.28;
 const FLAP_STRENGTH = -6;
-const PIPE_SPEED = 1.4;
-const PIPE_GAP = 320;
+const PIPE_SPEED = 1.8;
+const PIPE_GAP = 260;
 const PIPE_WIDTH = 80;
-const PIPE_DISTANCE = 220;
+const PIPE_DISTANCE = 180;
 
 let bird;
 let pipes;
@@ -183,12 +183,11 @@ function update() {
     return;
   }
 
-  frameCount += 1;
   bird.velocity += GRAVITY;
   bird.y += bird.velocity;
   bird.rotation = clamp((bird.velocity / 20) * 0.75, -0.5, 0.8);
 
-  if (frameCount % 120 === 0) {
+  if (pipes.length === 0 || pipes[pipes.length - 1].x < WIDTH - PIPE_DISTANCE) {
     spawnPipe();
   }
 
