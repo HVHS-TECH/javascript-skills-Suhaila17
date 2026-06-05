@@ -1,8 +1,13 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 const scoreLabel = document.getElementById('scoreLabel');
+const bestLabel = document.getElementById('bestLabel');
 const messages = document.getElementById('messages');
 const overlay = document.getElementById('overlay');
+const overlayTitle = document.getElementById('overlayTitle');
+const overlayText = document.getElementById('overlayText');
+const overlayButton = document.getElementById('overlayButton');
+const resetButton = document.getElementById('resetButton');
 const bestScoreText = document.getElementById('bestScoreText');
 
 const WIDTH = canvas.width;
@@ -19,6 +24,7 @@ let pipes;
 let score;
 let bestScore = 0;
 let playing = false;
+let gameState = 'ready';
 let frameCount;
 
 function resetGame() {
@@ -34,10 +40,7 @@ function resetGame() {
   score = 0;
   frameCount = 0;
   playing = false;
-  updateScore();
-  messages.textContent = 'Ready? Press Space, Click, or Tap';
-  overlay.style.display = 'flex';
-  bestScoreText.textContent = `Best: ${bestScore}`;
+  setOverlay('ready');
 }
 
 function spawnPipe() {
@@ -54,6 +57,38 @@ function spawnPipe() {
 
 function updateScore() {
   scoreLabel.textContent = `Score: ${score}`;
+  bestLabel.textContent = `High Score: ${bestScore}`;
+  updateMessages();
+}
+
+function setOverlay(state) {
+  gameState = state;
+  overlay.style.display = 'flex';
+  overlayTitle.textContent = state === 'gameOver' ? 'Game Over' : 'Flappy Bird';
+  overlayText.textContent = state === 'gameOver'
+    ? `You scored ${score} points. Press Start to play again.`
+    : 'Press Space, Click, or Tap to start.';
+  overlayButton.textContent = state === 'gameOver' ? 'Play Again' : 'Start';
+  bestScoreText.textContent = `Best: ${bestScore}`;
+  updateScore();
+}
+
+function updateMessages() {
+  if (gameState === 'playing') {
+    if (score >= 20) {
+      messages.textContent = 'Unstoppable! Keep flying!';
+    } else if (score >= 10) {
+      messages.textContent = 'Great job — you’re doing awesome!';
+    } else if (score >= 5) {
+      messages.textContent = 'Nice work, keep the rhythm!';
+    } else {
+      messages.textContent = 'Focus on the gap and keep flapping!';
+    }
+  } else if (gameState === 'ready') {
+    messages.textContent = 'Ready? Press Space, Click, or Tap to start.';
+  } else if (gameState === 'gameOver') {
+    messages.textContent = 'Game Over — press Start to try again.';
+  }
 }
 
 function clamp(value, min, max) {
@@ -62,8 +97,16 @@ function clamp(value, min, max) {
 
 function drawBackground() {
   const gradient = ctx.createLinearGradient(0, 0, 0, HEIGHT);
-  gradient.addColorStop(0, '#a9e0ff');
-  gradient.addColorStop(1, '#64b5ff');
+  if (score >= 20) {
+    gradient.addColorStop(0, '#1d3358');
+    gradient.addColorStop(1, '#0b1c3c');
+  } else if (score >= 10) {
+    gradient.addColorStop(0, '#ffb347');
+    gradient.addColorStop(1, '#ff7f50');
+  } else {
+    gradient.addColorStop(0, '#a9e0ff');
+    gradient.addColorStop(1, '#64b5ff');
+  }
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, WIDTH, HEIGHT);
 }
@@ -152,12 +195,10 @@ function update() {
 
   if (checkCollision()) {
     playing = false;
-    overlay.style.display = 'flex';
-    messages.textContent = 'Game Over — press Space or Tap to try again.';
     if (score > bestScore) {
       bestScore = score;
-      bestScoreText.textContent = `Best: ${bestScore}`;
     }
+    setOverlay('gameOver');
   }
 
   draw();
@@ -178,8 +219,9 @@ function startGame() {
       spawnPipe();
     }
     overlay.style.display = 'none';
-    messages.textContent = 'Playing...';
+    gameState = 'playing';
     playing = true;
+    updateMessages();
   }
 }
 
@@ -193,22 +235,40 @@ function flap() {
 window.addEventListener('keydown', event => {
   if (event.code === 'Space' || event.key === ' ') {
     event.preventDefault();
+    if (!playing) {
+      if (gameState === 'gameOver') {
+        resetGame();
+      }
+      startGame();
+    }
     flap();
   }
-  if (event.code === 'Enter' && !playing) {
+  if (event.code === 'Enter' && gameState === 'gameOver') {
     resetGame();
+    startGame();
   }
 });
 
-window.addEventListener('pointerdown', () => {
+window.addEventListener('pointerdown', event => {
   if (!playing) {
-    if (score > 0 || pipes.length > 0) {
+    if (gameState === 'gameOver') {
       resetGame();
-      return;
     }
     startGame();
   }
   flap();
+});
+
+overlayButton.addEventListener('click', () => {
+  if (gameState === 'gameOver') {
+    resetGame();
+  }
+  startGame();
+});
+
+resetButton.addEventListener('click', event => {
+  event.stopPropagation();
+  resetGame();
 });
 
 canvas.addEventListener('pointerdown', event => {

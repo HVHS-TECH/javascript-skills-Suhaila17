@@ -14,15 +14,22 @@
       <canvas id="gameCanvas" width="400" height="600"></canvas>
       <div class="overlay" id="overlay">
         <div class="overlay-card">
-          <h2>Flappy Bird</h2>
-          <p>Press Space, Click, or Tap to start.</p>
+          <h2 id="overlayTitle">Flappy Bird</h2>
+          <p id="overlayText">Press Space, Click, or Tap to start.</p>
+          <button id="overlayButton" class="primary-button">Start</button>
           <p id="bestScoreText">Best: 0</p>
         </div>
       </div>
     </div>
     <div class="scoreboard">
-      <span id="scoreLabel">Score: 0</span>
-      <span id="messages">Ready?</span>
+      <div class="score-row">
+        <span id="scoreLabel">Score: 0</span>
+        <span id="bestLabel">High Score: 0</span>
+      </div>
+      <div class="score-row">
+        <span id="messages">Ready?</span>
+        <button id="resetButton" class="small-button">Reset</button>
+      </div>
     </div>
   </div>
   <script src="game.js"></script>

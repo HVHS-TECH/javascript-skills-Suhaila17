@@ -32,26 +32,56 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+  pointer-events: all;
 }
 .overlay-card {
-  background: rgba(10, 24, 61, 0.84);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  padding: 20px;
+  background: rgba(10, 24, 61, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 22px;
   border-radius: 18px;
-  width: min(320px, 100%);
+  width: min(340px, 100%);
+}
+.primary-button,
+.small-button {
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.primary-button {
+  margin: 12px 0;
+  width: 100%;
+  padding: 12px 0;
+  background: #52c7f2;
+  color: #082540;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.small-button {
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+.primary-button:hover,
+.small-button:hover {
+  transform: translateY(-1px);
 }
 .scoreboard {
   margin-top: 16px;
+  display: grid;
+  gap: 10px;
+  font-size: 1rem;
+}
+.score-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  font-size: 1rem;
+  gap: 10px;
 }
 #messages {
   font-size: 0.95rem;
-  opacity: 0.82;
+  opacity: 0.9;
 }
 @media (max-width: 480px) {
   body {
