@@ -18,9 +18,9 @@ const HEIGHT = canvas.height;
 const GRAVITY = 0.28;
 const FLAP_STRENGTH = -6;
 const PIPE_SPEED = 1.8;
-const PIPE_GAP = 260;
+const PIPE_GAP = 240;
 const PIPE_WIDTH = 80;
-const PIPE_DISTANCE = 180;
+const PIPE_DISTANCE = 140;
 
 let bird;
 let pipes;
@@ -107,15 +107,19 @@ function clamp(value, min, max) {
 
 function drawBackground() {
   const gradient = ctx.createLinearGradient(0, 0, 0, HEIGHT);
-  if (score >= 20) {
-    gradient.addColorStop(0, '#1d3358');
-    gradient.addColorStop(1, '#0b1c3c');
-  } else if (score >= 10) {
-    gradient.addColorStop(0, '#ffb347');
-    gradient.addColorStop(1, '#ff7f50');
-  } else {
+  const stage = Math.floor(score / 10) % 4;
+  if (stage === 0) {
     gradient.addColorStop(0, '#a9e0ff');
     gradient.addColorStop(1, '#64b5ff');
+  } else if (stage === 1) {
+    gradient.addColorStop(0, '#ffb347');
+    gradient.addColorStop(1, '#ff7f50');
+  } else if (stage === 2) {
+    gradient.addColorStop(0, '#7dd2ff');
+    gradient.addColorStop(1, '#3f6fff');
+  } else {
+    gradient.addColorStop(0, '#1d3358');
+    gradient.addColorStop(1, '#0b1c3c');
   }
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, WIDTH, HEIGHT);
